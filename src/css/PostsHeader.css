@@ -1,0 +1,9 @@
+#posts-header {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#posts-header > h1 {
+    margin-left: 30px;
+    padding: 5px;
+}

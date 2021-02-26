@@ -1,0 +1,28 @@
+#navbar {
+    padding: 15px;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+#nav-menu {
+    display: inline;
+}
+
+#nav-menu > li {
+    list-style-type: none;
+    line-height: 15px;
+}
+
+.title {
+    float: left;
+}
+
+.title > span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.menu {
+    float: right;
+    padding-left: 10px;
+}
