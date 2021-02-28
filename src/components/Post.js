@@ -17,12 +17,16 @@ export default class PostComponent extends AbstractComponent {
     async getPost() {
         const post = await Posts.get(this.param.postId);
         this.post = post;
-        this.changeHeaderTitle(this.post.name.replace(/\.md$/, ''));
+        this.changeHeader(this.post.name.replace(/\.md$/, ''));
         this.post.content = this.post.content.replace(/---\n(.+\n)+---/, '');
         this.compiled = await Renderer.md2html(this.post.content);
     }
-    changeHeaderTitle(str) {
-        document.querySelector('#posts-header > h1').innerText = str;
+    changeHeader(str) {
+        const header = document.querySelector('#posts-header > div');
+        const description = document.createElement('p');
+        header.querySelector('h1').innerText = str;
+        description.innerText = this.post.config.description
+        header.appendChild(description);
     }
     getHTML() {
         return `
