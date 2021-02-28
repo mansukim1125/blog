@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     document.body.addEventListener('click', (e) => {
-        console.log(e);
         if (e.target.matches('[data-link]')) {
             e.preventDefault();
             if (location.pathname === e.target.getAttribute('href')) return;
