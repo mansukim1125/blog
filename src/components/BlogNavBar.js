@@ -19,7 +19,7 @@ export default class BlogNavBarComponent extends NavBarComponent {
             </nav>
             <header id="posts-header">
                 <div>
-                    <h1>글도 쓰는 개발자</h1>
+                    <h1>개발 블로그</h1>
                 </div>
             </header>
             <div id="main-container"></div>
