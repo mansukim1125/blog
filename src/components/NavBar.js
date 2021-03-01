@@ -14,7 +14,9 @@ export default class NavBarComponent extends AbstractComponent {
             <nav id="navbar">
                 <ul id="nav-menu">
                     <li class="title">
-                        <span>mansu</span>
+                        <span>
+                            <a href="/" data-link style="color: black;">mansu</a>
+                        </span>
                     </li>
                     <li class="menu">
                         <a href="/blog/posts" data-link>개발 블로그</a>

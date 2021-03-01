@@ -10,7 +10,9 @@ export default class BlogNavBarComponent extends NavBarComponent {
             <nav id="navbar">
                 <ul id="nav-menu">
                     <li class="title">
-                        <span>mansu</span>
+                        <span>
+                            <a href="/" data-link style="color: black;">mansu</a>
+                        </span>
                     </li>
                     <li class="menu">
                         <span>개발 블로그</span>
