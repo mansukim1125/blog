@@ -2,3 +2,14 @@ body {
     margin-left: 0;
     margin-right: 0;
 }
+
+a {
+    color: #0366d6;
+    text-decoration: none;
+    transition: color .5s;
+    transition-timing-function: ease-out;
+}
+
+a:hover {
+    color: gray;
+}
