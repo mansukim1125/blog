@@ -9,7 +9,7 @@ export default class ProjectsComponent extends AbstractComponent {
     }
     getHTML() {
         return `
-            <h1>Projects</h1>
+            <h1>프로젝트</h1>
         `;
     }
 }
