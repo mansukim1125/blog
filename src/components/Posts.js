@@ -5,6 +5,7 @@ import AbstractComponent from './Abstract';
 import Posts from '../api/Posts';
 
 import '../css/PostsHeader.css';
+import '../css/Posts.css';
 
 export default class PostsComponent extends AbstractComponent {
     async mount() {
@@ -32,7 +33,7 @@ export default class PostsComponent extends AbstractComponent {
     getHTML() {
         return `
             <div id="posts">
-                <ul>
+                <ul id="post-list">
                     ${this.processPostsToHTML()}
                 </ul>
             </div>
