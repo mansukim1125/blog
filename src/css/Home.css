@@ -1,0 +1,10 @@
+#main-title {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    border-right: 1px solid;
+}
+
+#container {
+    height: 100%;
+}
