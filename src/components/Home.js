@@ -8,7 +8,7 @@ export default class HomeComponent extends AbstractComponent {
     mount() {
         this.mountPosId = 'main-container';
         this.interval = null;
-        this.titleText = '일상의 문제를 해결하는 서비스를 만듭니다'
+        this.titleText = 'Home'
         super.mount();
         this.writeInterval(this.interval);
     }
