@@ -13,6 +13,22 @@ export default class PostComponent extends AbstractComponent {
         this.mountPosId = 'main-container';
         await this.getPost();
         super.mount();
+        this.appendCommentsArea();
+    }
+    appendCommentsArea() {
+        const script = document.createElement('script');
+        const config = {
+            src: 'https://utteranc.es/client.js',
+            repo: 'mansukim1125/mansukim-comments',
+            ["issue-term"]: 'pathname',
+            theme: 'github-light',
+            crossorigin: 'anonymous',
+            async: true
+        };
+        for (const key in config) {
+            script.setAttribute(key, config[key]);
+        }
+        document.getElementById('comments-area').appendChild(script);
     }
     async getPost() {
         const post = await Posts.get(this.param.postId);
@@ -33,6 +49,7 @@ export default class PostComponent extends AbstractComponent {
             <div class="markdown-body">
                 <p>${this.compiled}</p>
             </div>
+            <div id="comments-area"></div>
         `;
     }
 }
