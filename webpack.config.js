@@ -1,6 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+// const PrerenderSPAPlugin = require('prerender-spa-plugin');
+
+// const { routes } = require('./src/routes/index');
 
 module.exports = {
     mode: 'development',
@@ -20,7 +23,11 @@ module.exports = {
                 collapseWhitespace: true
             },
             template: './src/index.html'
-        })
+        }),
+        // new PrerenderSPAPlugin({
+        //     staticDir: path.join(__dirname, 'dist'),
+        //     routes: 
+        // })
     ],
     output: {
         filename: './bundle.js',

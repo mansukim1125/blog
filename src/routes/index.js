@@ -9,7 +9,7 @@ import PostComponent from '../components/Post';
 import ProjectsComponent from '../components/Projects';
 import BlogNavBarComponent from '../components/BlogNavBar';
 
-const routes = [
+export const routes = [
     {
         path: '/',
         component: NavBarComponent,
