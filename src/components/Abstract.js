@@ -1,9 +1,10 @@
 'use strict';
 
 export default class AbstractComponent {
-    constructor(param, parentComp) {
+    constructor(param, parentComp, mountPosId) {
         this.param = param;
         this.parent = parentComp;
+        this.mountPosId = mountPosId;
         this.mount();
     }
     mount() {
