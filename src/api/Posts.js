@@ -7,7 +7,7 @@ export default class Posts {
     static async get(postTitle) {
         if (postTitle) {
             try {
-                const { data } = await axios.get(`https://api.github.com/repos/mansukim1125/test-blog/contents/posts/${postTitle}.md`);
+                const { data } = await axios.get(`https://mansu.ga/.netlify/functions/get_post_by_title?title=${postTitle}`);
                 
                 data.content = Buffer.decode(data.content);
                 const configs = {};
@@ -28,8 +28,8 @@ export default class Posts {
             }
         } else {
             try {
-                const { data } = await axios.get(`https://api.github.com/repos/mansukim1125/test-blog/contents/posts`);
-
+                const { data } = await axios.get(`https://mansu.ga/.netlify/functions/get_posts`);
+                
                 let queue = [];
                 data.forEach(item => {
                     item.name = item.name.replace(/\.md$/, '');

@@ -64,3 +64,9 @@ node_modules/
 
 # dotenv environment variables file
 .env
+
+# Local Netlify folder
+.netlify
+
+# ignore webpack build
+dist/
