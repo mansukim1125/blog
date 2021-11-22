@@ -10,3 +10,18 @@ JSON의 Tree 구조를 순회하면서 사용자가 접속한 URI에 Match되는
 [블로그 개발기_2_Router 알고리즘 설계](https://mansu.ga/blog/posts/%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EA%B0%9C%EB%B0%9C%EA%B8%B0_2_Router%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EC%84%A4%EA%B3%84)
 
 [블로그 개발기_3_Router 정규표현식](https://mansu.ga/blog/posts/%EB%B8%94%EB%A1%9C%EA%B7%B8%20%EA%B0%9C%EB%B0%9C%EA%B8%B0_3_Router%20%EC%A0%95%EA%B7%9C%ED%91%9C%ED%98%84%EC%8B%9D)
+
+# 실행
+
+먼저, 실행에 필요한 package를 설치합니다.
+
+```
+yarn install
+```
+
+그 다음, 실행합니다.
+
+```
+yarn dev
+```
+
