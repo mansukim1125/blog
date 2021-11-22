@@ -11,6 +11,7 @@ import '../css/MarkdownBody.css';
 export default class PostComponent extends AbstractComponent {
     async mount() {
         this.mountPosId = 'main-container';
+        document.title = decodeURIComponent(this.param.postId);
         await this.getPost();
         super.mount();
         this.appendCommentsArea();

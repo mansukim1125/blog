@@ -9,6 +9,7 @@ export default class HomeComponent extends AbstractComponent {
         this.mountPosId = 'main-container';
         this.interval = null;
         this.titleText = 'make a program for better life.'
+        document.title = "mansu";
         super.mount();
         this.writeInterval(this.interval);
     }

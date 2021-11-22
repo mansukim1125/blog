@@ -11,7 +11,9 @@ export default class PostsComponent extends AbstractComponent {
     async mount() {
         this.mountPosId = 'main-container';
         this.addLoadingText();
+        document.title = "개발 블로그 - 로드중입니다";
         await this.getPosts();
+        document.title = "개발 블로그";
         super.mount();
     }
     async getPosts() {

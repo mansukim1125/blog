@@ -9,6 +9,7 @@ import '../css/Projects.css';
 export default class ProjectsComponent extends AbstractComponent {
     mount() {
         this.mountPosId = 'main-container';
+        document.title = "Projects";
         new BlogNavBarComponent();
         super.mount();
         this.changeHeader();
