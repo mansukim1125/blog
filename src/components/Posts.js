@@ -10,6 +10,7 @@ import '../css/Posts.css';
 export default class PostsComponent extends AbstractComponent {
     async mount() {
         this.mountPosId = 'main-container';
+        this.addLoadingText();
         await this.getPosts();
         super.mount();
     }
@@ -29,6 +30,11 @@ export default class PostsComponent extends AbstractComponent {
                 </li>`;
         });
         return this.postsHTML;
+    }
+    addLoadingText() {
+        const h1 = document.createElement("h1");
+        h1.innerText = "로드중입니다";
+        document.getElementById("main-container").appendChild(h1);
     }
     getHTML() {
         return `
