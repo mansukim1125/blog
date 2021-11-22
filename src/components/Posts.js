@@ -26,7 +26,7 @@ export default class PostsComponent extends AbstractComponent {
                     <div class="post-info">
                         <a href="/blog/posts/${encodeURIComponent(post.name)}" data-link>${post.name}</a>
                         <p>${post.config.description}</p>
-                    </div>            
+                    </div>
                 </li>`;
         });
         return this.postsHTML;
@@ -34,6 +34,7 @@ export default class PostsComponent extends AbstractComponent {
     addLoadingText() {
         const h1 = document.createElement("h1");
         h1.innerText = "로드중입니다";
+        h1.style.paddingLeft = "20px"
         document.getElementById("main-container").appendChild(h1);
     }
     getHTML() {
